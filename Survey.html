@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./css/Survey.css">
+  <title>Title</title>
+</head>
+<body>
+<main>
+  <h1 id="title">A Short Survey </h1>
+  <p id="description">A survey to try and find a correlation between looks and food preference.</p>
+
+  <form id="survey-form">
+
+    <label id="name-label">Name:</label><br>
+    <input id="name" type="text" name="name" placeholder="Enter your Name" required><br>
+
+    <label id="email-label">Email:</label><br>
+    <input id="email" type="email" name="email" placeholder="Enter your Email ex: Myemail@gmail.com" required><br>
+
+    <label id="number-label">Age:</label><br>
+    <input id="number" type="number" min="1" max="130" name="number" placeholder="Enter your Age"><br>
+
+    <label id="dropdown-label">Hair Color:</label><br>
+    <select name="haircolor" id="dropdown" name="dropdown">
+      <option value="" selected>--Please choose your hair color--</option>
+      <option value="Brown">Brown</option>
+      <option value="Black">Black</option>
+      <option value="Red">Red</option>
+      <option value="Blond">Blond</option>
+      <option value="Blue">Blue</option>
+      <option value="Pink">Pink</option>
+    </select><br>
+
+    <label id="radio-list">Favorite Food Groups:</label><br>
+    <input id="Pizza" type="radio" name="food" value="favorite" checked>
+    <label for="Pizza">Pizza</label>
+    <input id="Soup" type="radio" name="food" value="favorite">
+    <label for="Soup">Soup</label>
+    <input id="Sandwiches" type="radio" name="food" value="favorite">
+    <label for="Sandwiches">Sandwiches</label>
+    <input id="Dumplings" type="radio" name="food" value="favorite">
+    <label for="Dumplings">Dumplings</label>
+    <br>
+    <label id="Favorite Meat">Favorite Meat:</label><br>
+    <input id="Beef" type="checkbox" name="Beef" value="favorite">
+    <label for="Beef"> Beef</label><br>
+    <input id="Pork" type="checkbox" name="Pork" value="favorite">
+    <label for="Pork"> Pork</label><br>
+    <input id="Chicken" type="checkbox" name="Chicken" value="favorite">
+    <label for="Chicken"> Chicken</label><br>
+    <input id="Duck" type="checkbox" name="Duck" value="favorite">
+    <label for="Duck"> Duck</label><br>
+    <input id="Fish" type="checkbox" name="Fish" value="favorite">
+    <label for="Fish"> Fish</label><br>
+    <input id="Vegetarian" type="checkbox" name="Vegetarian" value="favorite">
+    <label for="Vegetarian"> Vegetarian</label><br>
+    <input id="Vegan" type="checkbox" name="Vegan" value="favorite">
+    <label for="Vegan"> Vegan</label><br>
+
+
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="5" cols="33" maxlength="1000" wrap="soft"
+              placeholder="Please leave any comments in this section."></textarea><br>
+
+    <input type="submit" id="submit" value="submit">
+
+  </form>
+
+
+</main>
+
+</body>
+</html>
